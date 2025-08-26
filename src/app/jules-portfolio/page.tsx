@@ -42,6 +42,15 @@ export default function JulesPortfolio() {
               </p>
             </div>
             
+            {/* Großes rotes Viereck mit "update" */}
+            <div className="flex justify-center mt-8 mb-8">
+              <div className="w-64 h-64 bg-red-500 flex items-center justify-center rounded-lg shadow-lg">
+                <span className="text-white text-4xl font-bold uppercase tracking-wider">
+                  UPDATE
+                </span>
+              </div>
+            </div>
+            
             {/* Platzhalter für zukünftige Inhalte */}
             <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[1, 2, 3].map((item) => (
