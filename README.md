@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shared Project 🚀
 
-## Getting Started
+Ein gemeinsames Next.js Projekt für die Zusammenarbeit.
 
-First, run the development server:
+## 📋 Über das Projekt
 
+Dieses Projekt wurde mit Next.js 15, TypeScript und Tailwind CSS erstellt. Es bietet eine moderne Entwicklungsumgebung für die gemeinsame Arbeit an Web-Anwendungen.
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (mit App Router)
+- **Sprache:** TypeScript
+- **Styling:** Tailwind CSS
+- **Linting:** ESLint
+- **Package Manager:** npm
+
+## 🚀 Getting Started
+
+### Voraussetzungen
+
+- Node.js (Version 18 oder höher)
+- npm oder yarn
+- Git
+
+### Installation
+
+1. Repository klonen:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd shared-project
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Dependencies installieren:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Entwicklungsserver starten:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Öffne [http://localhost:3000](http://localhost:3000) in deinem Browser
 
-## Learn More
+## 📝 Verfügbare Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Startet den Entwicklungsserver mit Turbopack
+- `npm run build` - Erstellt die Produktionsversion
+- `npm run start` - Startet den Produktionsserver
+- `npm run lint` - Führt ESLint aus
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Zusammenarbeit
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Git Workflow
 
-## Deploy on Vercel
+1. **Neue Features/Fixes:**
+   ```bash
+   git checkout -b feature/dein-feature-name
+   # Arbeite an deinem Feature
+   git add .
+   git commit -m "feat: beschreibung des features"
+   git push origin feature/dein-feature-name
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Pull Request erstellen** auf GitHub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Code Review** durch den anderen Entwickler
+
+4. **Merge** nach Approval
+
+### Commit Conventions
+
+Wir verwenden [Conventional Commits](https://www.conventionalcommits.org/):
+
+- `feat:` - Neue Features
+- `fix:` - Bugfixes
+- `docs:` - Dokumentation
+- `style:` - Code-Formatierung
+- `refactor:` - Code-Refactoring
+- `test:` - Tests
+- `chore:` - Build-Prozess, Dependencies
+
+### Projektstruktur
+
+```
+shared-project/
+├── src/
+│   ├── app/              # App Router (Next.js 13+)
+│   │   ├── globals.css   # Globale Styles
+│   │   ├── layout.tsx    # Root Layout
+│   │   └── page.tsx      # Homepage
+│   ├── components/       # Wiederverwendbare Komponenten
+│   ├── lib/             # Utility-Funktionen
+│   └── types/           # TypeScript Type Definitionen
+├── public/              # Statische Assets
+├── package.json
+└── README.md
+```
+
+## 🎨 Styling
+
+Das Projekt verwendet Tailwind CSS für das Styling. Die Konfiguration findest du in:
+- `tailwind.config.js`
+- `src/app/globals.css`
+
+## 📦 Dependencies hinzufügen
+
+```bash
+# Produktions-Dependency
+npm install package-name
+
+# Entwicklungs-Dependency
+npm install -D package-name
+```
+
+## 🐛 Debugging
+
+- Verwende die Browser DevTools
+- Next.js bietet detaillierte Error-Messages
+- ESLint hilft bei Code-Qualität
+
+## 📚 Nützliche Links
+
+- [Next.js Dokumentation](https://nextjs.org/docs)
+- [TypeScript Dokumentation](https://www.typescriptlang.org/docs/)
+- [Tailwind CSS Dokumentation](https://tailwindcss.com/docs)
+- [React Dokumentation](https://react.dev/)
+
+## 🤔 Fragen?
+
+Bei Fragen oder Problemen:
+1. Schaue in die Dokumentation
+2. Erstelle ein Issue auf GitHub
+3. Frage den anderen Entwickler
+
+---
+
+**Happy Coding! 🎉**
