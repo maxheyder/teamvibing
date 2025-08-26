@@ -2,6 +2,13 @@
   "name": "shared-project",
   "version": "0.1.0",
   "private": true,
+  "description": "Ein gemeinsames Next.js Projekt für die Zusammenarbeit",
+  "keywords": ["nextjs", "typescript", "tailwindcss", "collaboration"],
+  "author": "Dein Name <deine.email@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dein-username/shared-project.git"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
